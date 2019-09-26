@@ -1,0 +1,19 @@
+<?php
+
+class Usuario {
+    private $primeiroNome;
+    private $ultimoNome;
+
+    public function __construct($primeiroNome,$ultimoNome){
+        $this -> primeironome = $primeiroNome;
+        $this -> ultimonome = $ultimoNome;
+    }
+public function getNomeCompleto(){
+return "O nome completo do usuario é " . $this->primeironome . $this->ultimonome;
+
+}
+}
+
+$usuario1 = new Usuario("Felipe"," Batista");
+echo $usuario1->getNomeCompleto();
+?
