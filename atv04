@@ -1,0 +1,22 @@
+1) D
+
+<?php
+class Usuario{
+    private $primeiroNome;
+    public function setUsuario($primeironome){
+    $this->primeironome = $primeironome;
+
+}
+public function getUsuario(){
+
+return "O nome do usuario é " . $this->primeironome;
+
+
+}
+}
+
+$usuario1 = new Usuario();
+$usuario1->setUsuario("Joe");
+echo $usuario1->getUsuario();
+
+?>
