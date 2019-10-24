@@ -1,0 +1,50 @@
+<?php
+
+class MinhaClasse{
+    public $mensagem;
+    
+    public function __construct(){
+        echo 'A classe' . __CLASS__ . 'foi inicializada';
+    }
+
+}
+$exibemsg = new MinhaClasse;
+
+---2
+
+<?php
+
+class MinhaClasse{
+    public $fulano;
+    
+    public function __construct($fulano){
+        $this->fulano = $fulano;
+        echo '"Olá, eu sou '. $fulano . '';
+    }
+
+}
+$exibemsg = new MinhaClasse('Felipe');
+
+----3
+
+<?php
+
+class MinhaClasse{
+    public $n;
+    
+    public function __construct($n){
+       $i = $n;
+       $calc = 1;
+       while ($i > 1){
+        $calc *= $i;
+        $i--;
+       }
+
+    echo $calc;
+    }
+    
+
+}
+$calcfat = new MinhaClasse('5');
+
+------4
